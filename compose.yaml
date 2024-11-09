@@ -1,0 +1,8 @@
+﻿services:
+  website:
+    image: website
+    build:
+      context: .
+      dockerfile: website/Dockerfile
+    ports:
+      - "8080"

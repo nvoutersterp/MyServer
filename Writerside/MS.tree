@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="MS"
+                 name="MyServer"
+                 start-page="myserver.md">
+
+    <toc-element topic="myserver.md"/>
+    <toc-element topic="starter-topic.md"/>
+</instance-profile>

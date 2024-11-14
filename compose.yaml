@@ -1,5 +1,6 @@
 ﻿services:
   website:
+    platform: linux/amd64
     image: website
     build:
       context: .

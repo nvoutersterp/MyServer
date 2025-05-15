@@ -4,11 +4,11 @@ using website.Models;
 
 namespace website.Controllers;
 
-public class HomeController : Controller
+public class nlController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<nlController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public nlController(ILogger<nlController> logger)
     {
         _logger = logger;
     }
@@ -27,10 +27,5 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
-
-    public IActionResult Test()
-    {
-        return View();
     }
 }

@@ -15,17 +15,20 @@ public class nlController : Controller
 
     public IActionResult Index()
     {
+        _logger.LogTrace("NL Index requested");
         return View();
     }
 
     public IActionResult Privacy()
     {
+        _logger.LogTrace("NL Privacy requested");
         return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
+        _logger.LogTrace("Error requested");
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }

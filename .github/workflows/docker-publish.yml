@@ -82,6 +82,7 @@ jobs:
           context: .
           file: ./website/Dockerfile
           platforms: ${{ matrix.platforms }}
+          dotnet-version: ${{ matrix.dotnet }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

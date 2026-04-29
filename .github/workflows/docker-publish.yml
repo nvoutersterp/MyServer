@@ -27,6 +27,7 @@ jobs:
     strategy:
       matrix:
         platforms: [linux/amd64, linux/arm64]
+        dotnet: [ '8.0', '10.0' ]
     
     runs-on: ubuntu-latest
     permissions:
